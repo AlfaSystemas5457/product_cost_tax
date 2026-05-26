@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costo con Impuestos Incluidos</title>
+</head>
+<body>
+    <h1>Costo con Impuestos Incluidos</h1>
+    <p>Muestra el costo con impuestos incluidos en la ficha del producto.</p>
+
+    <h2>Características</h2>
+    <ul>
+        <li>Agrega un campo calculado <code>cost_tax_string</code> en <code>product.template</code> y <code>product.product</code></li>
+        <li>Muestra el costo + impuestos de compra en formato legible: <code>(= $116.00 Impuestos Incluidos)</code></li>
+        <li>Aparece automáticamente junto al campo "Impuestos de compra" en la vista de producto</li>
+        <li>Compatible con empresas multicompañía (filtra impuestos por compañía)</li>
+    </ul>
+
+    <h2>Dependencias</h2>
+    <ul>
+        <li><code>product</code></li>
+        <li><code>account</code></li>
+    </ul>
+
+    <h2>Uso</h2>
+    <ol>
+        <li>Instale el módulo</li>
+        <li>Vaya a Ventas &gt; Productos &gt; Productos</li>
+        <li>Abra cualquier producto</li>
+        <li>En la pestaña "Información general", bajo "Costo", verá el texto con los impuestos incluidos</li>
+    </ol>
+
+    <h2>Ejemplo</h2>
+    <p>Si un producto tiene:</p>
+    <ul>
+        <li><strong>Costo:</strong> $100.00</li>
+        <li><strong>Impuesto de compra:</strong> IVA 16%</li>
+    </ul>
+    <p>Se mostrará: <code>(= $116.00 Impuestos Incluidos)</code></p>
+</body>
+</html>
